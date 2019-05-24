@@ -1,0 +1,26 @@
+<label class="clr_white" for="Filter">Filter By Vote :  </label>
+<input type="text" [(ngModel)]="moviesLisfFilter.vote_average" placeholder="Type Vote to filter">
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Poster</th>
+      <th>Popularity</th>
+      <th>Vote Average</th>
+      <th>Release Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let m of moviesList.results | filterBy:moviesLisfFilter">
+      <td>{{ m.title }}</td>
+      <td class="img_container"><img [src]="'https://image.tmdb.org/t/p/w500/'+ m.poster_path" class="img_responsive"></td>
+      <!-- <td class="img_container"><img [src]="'https://image.tmdb.org/t/p/w500/'+ m.poster_path" [style.width.px]="100" [style.height.px]="100"   class="img_responsive"></td> -->
+      <td>{{ m.popularity }}</td>
+      <td>{{ m.vote_average }}</td>
+      <td>{{ m.release_date }}</td>
+    </tr>
+    <!-- <tr *ngIf ="(moviesList.results | filterBy: moviesLisfFilter).length === 0">
+        <td colspan="5">No matching elements</td>        
+    </tr> -->
+  </tbody>  
+</table>
