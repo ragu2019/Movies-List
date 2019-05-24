@@ -35,7 +35,7 @@ Angular 7 installations are very simple with the help of angular CLI. Visit the 
 
 Type `npm install -g @angular/cli`, to install angular cli on your system. Angular cli has to be `7.3`.
 
-#IDE
+# IDE
 
 You can use any IDE of your choice, i.e., WebStorm, Atom, Visual Studio Code, etc.
 
