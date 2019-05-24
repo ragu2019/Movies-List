@@ -10,7 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 
-#The Environment Setup required for Angular 7. To install Angular 7, require the following −
+# The Environment Setup required for Angular 7. To install Angular 7, require the following −
 
 Nodejs
 Npm
